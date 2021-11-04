@@ -1,0 +1,68 @@
+.care {
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  .image {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../imgs/care.png") center;
+    background-size: cover;
+    padding: 3rem 0rem;
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      transform: translateX(5%);
+    }
+  }
+  .content {
+    width: 55%;
+    padding: 0rem 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    .title {
+      color: $text;
+      font-size: 40px;
+      line-height: 54px;
+      font-weight: 600;
+    }
+    p {
+      max-width: 445px;
+      font-size: 16px;
+      line-height: 29px;
+      color: $text;
+    }
+    .button {
+      color: $text;
+      max-width: 168px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $text;
+      text-transform: uppercase;
+      background-color: transparent;
+      font-size: 12px;
+      letter-spacing: 3.5px;
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 957px) {
+  .care {
+    margin-top: 5rem;
+    .image {
+      width: 85%;
+    }
+    .content {
+      padding: 5rem;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto_Mono/RobotoMono-Medium.ttf");
+}
+@font-face {
+  font-family: Eczar;
+  src: url("../fonts/Eczar/Eczar-Medium.ttf");
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: Roboto;
+}
+$spacing: 4rem;
+$color-primary: #1e252c;
+$text: rgba(74, 74, 74, 1);
+$bgc-color: #2c4340;
+$image-shadow: #ecebec;

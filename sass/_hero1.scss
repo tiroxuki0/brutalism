@@ -1,0 +1,140 @@
+.hero1 {
+  font-family: Eczar;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  padding: 15rem $spacing 30rem $spacing;
+  top: 0;
+  left: 0;
+  background: url("../imgs/bg.png") center no-repeat;
+  background-size: cover;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10rem;
+  &-heading {
+    max-width: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    h2 {
+      width: 100%;
+      font-size: 100px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      background-color: transparent;
+      height: 120px;
+      color: white;
+      text-align: start;
+      position: relative;
+      flex-direction: column;
+      overflow: hidden;
+      margin-bottom: -4rem;
+      &:first-child,
+      &:nth-child(2),
+      &:nth-child(3) {
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+      }
+      &:first-child,
+      &:nth-child(2) {
+        height: 100px;
+      }
+    }
+  }
+
+  .slogan {
+    max-width: 642px;
+    text-align: center;
+    span {
+      font-family: Roboto;
+      color: white;
+      font-size: 24px;
+      line-height: calc(34 / 24);
+      font-weight: 500;
+    }
+  }
+
+  .scrollDown {
+    position: absolute;
+    left: 50%;
+    bottom: $spacing;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 22px;
+    cursor: pointer;
+    span {
+      color: white;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    i {
+      color: white;
+      font-size: 4rem;
+    }
+  }
+
+  .madeBy {
+    position: absolute;
+    left: 0;
+    bottom: calc($spacing * 3);
+    transform: rotate(-90deg);
+    color: white;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 830px) {
+  .hero1 {
+    width: 100vw;
+    height: 100vh;
+    &-heading {
+      h2 {
+        height: 60px;
+        font-size: 40px;
+        margin-bottom: -2.5rem;
+        &:first-child,
+        &:nth-child(2) {
+          height: 50px;
+        }
+      }
+    }
+
+    .slogan {
+      line-height: 34px;
+    }
+
+    .madeBy {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 474px) {
+  .hero1 {
+    width: 100vw;
+    height: 100vh;
+    padding: 15rem 1rem 30rem 0rem;
+    .heading {
+      h2 {
+        height: 50px;
+        font-size: 40px;
+        margin-bottom: -2.3rem;
+        &:first-child,
+        &:nth-child(2) {
+          height: 40px;
+        }
+      }
+    }
+  }
+}

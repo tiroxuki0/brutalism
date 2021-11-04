@@ -1,0 +1,131 @@
+.they {
+  width: 100vw;
+  height: auto;
+  padding: calc($spacing * 8) $spacing $spacing $spacing;
+  background-color: #1e252c;
+  position: relative;
+  .heading {
+    max-width: 590px;
+    top: $spacing;
+    right: $spacing;
+    line-height: 120px;
+    text-align: right;
+    -webkit-text-stroke-color: $text;
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    .number-container {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .number {
+        max-width: 940px;
+        min-height: 445px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 9rem;
+        .image {
+          max-width: 335px;
+          height: 340px;
+          flex-shrink: 0;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+        .content {
+          max-width: 500px;
+          position: relative;
+          &:before {
+            font-family: Eczar;
+            content: '"';
+            position: absolute;
+            top: 0;
+            font-size: 35rem;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: rgb(255, 255, 255, 0.5);
+            color: transparent;
+            transform: rotate(180deg) translateX(90%);
+            height: 18rem;
+          }
+          p {
+            font-size: 26px;
+            line-height: 38px;
+            color: white;
+          }
+          .name {
+            width: 100%;
+            p {
+              width: 100%;
+              text-align: right;
+              font-size: 12px;
+              letter-spacing: 3px;
+            }
+            span {
+              display: block;
+              width: 100%;
+              text-align: right;
+              font-size: 14px;
+              letter-spacing: 1px;
+              color: $text;
+            }
+          }
+        }
+      }
+      &:nth-child(2) {
+        justify-content: flex-end;
+      }
+      &:last-child {
+        justify-content: center;
+        .number {
+          .content {
+            &:before {
+              content: '"';
+              right: 0;
+              transform: translate(90%, -120%);
+            }
+            .name {
+              p,
+              span {
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .they {
+    .wrapper {
+      gap: 10rem;
+      .number-container {
+        .number {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 5rem;
+        }
+        &:last-child {
+          .number {
+            flex-direction: column-reverse;
+            .content {
+              &::before {
+                left: 0;
+                transform: rotate(180deg) translateX(98%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

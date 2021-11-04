@@ -1,0 +1,117 @@
+.work1 {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 12rem;
+  padding: calc($spacing * 4) $spacing;
+  position: relative;
+  .image {
+    max-width: 500px;
+    height: 100%;
+    flex-shrink: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: fit;
+    }
+  }
+  .content {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 26px;
+    .title {
+      font-size: 12px;
+      letter-spacing: 3px;
+      color: $color-primary;
+      text-transform: uppercase;
+      margin-left: 4rem;
+    }
+    .work1-menu {
+      font-family: Eczar;
+      width: 100%;
+      height: auto;
+      .work1-item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        .work1-link {
+          width: 100%;
+          font-size: 52px;
+          font-weight: 600;
+          color: rgba(30, 37, 44, 1);
+          span {
+            color: transparent;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: $color-primary;
+            margin-right: 10px;
+          }
+        }
+      }
+      .work1-item:nth-child(3) {
+        transform: translateX(-10%);
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          width: 13rem;
+          height: 2px;
+          background-color: $color-primary;
+          left: 0%;
+          top: 50%;
+          transform: translate(-120%, -50%);
+        }
+        .work1-link {
+          span {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1092px) {
+  .work1 {
+    gap: 5rem;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    .image {
+      width: 100%;
+    }
+    .content {
+      width: 100%;
+      align-items: center;
+
+      .work1-menu {
+        .work1-item {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 467px) {
+  .work1 {
+    padding: 5rem 2rem 10rem;
+    .content {
+      .work1-menu {
+        .work1-item {
+          .work1-link {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    .nav {
+      gap: 1rem;
+      right: 0rem;
+    }
+  }
+}
