@@ -126,7 +126,8 @@
 @media screen and (max-width: 854px) {
   .detail {
     .heading {
-      width: 80%;
+      width: 100%;
+      padding: 2rem;
     }
     .images {
       height: auto;
@@ -146,7 +147,7 @@
   .detail {
     padding: 8rem 4rem 16rem 4rem;
     .heading {
-      font-size: 60px;
+      font-size: 55px;
       line-height: 60px;
       top: 15%;
     }
