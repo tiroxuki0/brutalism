@@ -1,6 +1,6 @@
 .logos {
   width: 100vw;
-  padding: $spacing;
+  padding: calc($spacing * 2) $spacing;
   display: flex;
   justify-content: center;
   align-items: center;

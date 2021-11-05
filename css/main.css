@@ -1155,7 +1155,7 @@ img {
 }
 .logos {
   width: 100vw;
-  padding: 4rem;
+  padding: 8rem 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
