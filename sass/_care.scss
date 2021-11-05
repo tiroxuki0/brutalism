@@ -59,10 +59,21 @@
     margin-top: 5rem;
     .image {
       width: 85%;
+      display: none;
     }
     .content {
+      background: url(../imgs/care.png) center no-repeat;
+      background-size: cover;
       padding: 5rem;
       width: 100%;
+      .title,
+      p,
+      .button {
+        color: white;
+      }
+      .button {
+        border: 1px solid white;
+      }
     }
   }
 }

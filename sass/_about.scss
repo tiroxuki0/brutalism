@@ -179,9 +179,10 @@
         transform: translateY(-10%);
       }
       .image {
-        width: 100%;
+        width: 90%;
+        height: 90%;
         img {
-          box-shadow: 15px 15px 0 #ecebec;
+          box-shadow: 25px 25px 0 #ecebec;
         }
         &:before {
           width: 90%;
@@ -205,13 +206,18 @@
       }
       .image {
         img {
-          box-shadow: -25px -25px 0 #ecebec;
+          box-shadow: -40px -40px 0 #ecebec;
         }
       }
     }
 
     .about-bottom {
-      padding: 7rem 0rem;
+      padding: 8rem 0rem;
+      .heading {
+        width: 100%;
+        left: 0;
+        transform: translate(0, 0);
+      }
       .content {
         gap: 4rem;
         div {

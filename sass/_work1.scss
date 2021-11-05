@@ -102,7 +102,15 @@
     padding: 5rem 2rem 10rem;
     .content {
       .work1-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
         .work1-item {
+          width: 80%;
+          text-align: left;
+          &:nth-child(3):before {
+            background-color: transparent;
+          }
           .work1-link {
             font-size: 30px;
           }

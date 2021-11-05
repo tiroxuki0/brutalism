@@ -1,0 +1,53 @@
+.logos {
+  width: 100vw;
+  padding: $spacing;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  .image {
+    img {
+    }
+  }
+}
+.footer {
+  width: 100vw;
+  height: auto;
+  background-color: #1e252c;
+  padding: $spacing;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  .nav {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    &-item {
+      a {
+        color: white;
+      }
+    }
+    .line {
+      background-color: white;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: $spacing 0rem;
+    gap: 5rem;
+    .image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .nav,
+    .image {
+      gap: 1rem;
+      width: 100%;
+    }
+  }
+}
