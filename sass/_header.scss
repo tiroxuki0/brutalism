@@ -37,6 +37,9 @@
     span {
       display: none;
     }
+    &.fixed {
+      padding: 1rem 1rem;
+    }
     .logo {
       position: relative;
       top: 0;

@@ -166,6 +166,9 @@ img {
   .header span {
     display: none;
   }
+  .header.fixed {
+    padding: 1rem 1rem;
+  }
   .header .logo {
     position: relative;
     top: 0;
@@ -294,12 +297,12 @@ img {
     height: 100vh;
     padding: 15rem 1rem 30rem 0rem;
   }
-  .hero1 .heading h2 {
+  .hero1-heading h2 {
     height: 50px;
     font-size: 40px;
     margin-bottom: -2.3rem;
   }
-  .hero1 .heading h2:first-child, .hero1 .heading h2:nth-child(2) {
+  .hero1-heading h2:first-child, .hero1-heading h2:nth-child(2) {
     height: 40px;
   }
 }
@@ -743,6 +746,9 @@ img {
   .about .about-top .image {
     width: 100%;
   }
+  .about .about-top .image img {
+    box-shadow: 15px 15px 0 #ecebec;
+  }
   .about .about-top .image:before {
     width: 90%;
     height: 90%;
@@ -760,6 +766,9 @@ img {
   }
   .about .about-mid .content span {
     margin-left: 0;
+  }
+  .about .about-mid .image img {
+    box-shadow: -25px -25px 0 #ecebec;
   }
   .about .about-bottom {
     padding: 7rem 0rem;

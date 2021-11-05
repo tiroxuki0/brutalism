@@ -180,6 +180,9 @@
       }
       .image {
         width: 100%;
+        img {
+          box-shadow: 15px 15px 0 #ecebec;
+        }
         &:before {
           width: 90%;
           height: 90%;
@@ -198,6 +201,11 @@
         gap: 3rem;
         span {
           margin-left: 0;
+        }
+      }
+      .image {
+        img {
+          box-shadow: -25px -25px 0 #ecebec;
         }
       }
     }
