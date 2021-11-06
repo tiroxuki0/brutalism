@@ -106,6 +106,7 @@ img {
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #1e252c;
+  cursor: pointer;
 }
 .nav .line {
   width: 35px;
@@ -151,12 +152,14 @@ img {
   font-size: 12px;
   letter-spacing: 3px;
   padding: 0.5rem 0rem;
+  cursor: pointer;
 }
 .header .logo {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 .header .signIn {
   border-bottom: 1px solid white;
@@ -1173,6 +1176,9 @@ img {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+.footer .image {
+  cursor: pointer;
 }
 .footer .nav {
   position: relative;

@@ -21,6 +21,9 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  .image {
+    cursor: pointer;
+  }
   .nav {
     position: relative;
     right: 0;
